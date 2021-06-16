@@ -10,7 +10,7 @@ namespace Types.Tests
         public static IEnumerable<object[]> Get_ToInt_Data_Passing()
         {
             yield return new object[] { "1234" };
-            yield return new object[] { "80973450" };
+            yield return new object[] { "1122334455" };
         }
 
         [Theory]
@@ -24,9 +24,15 @@ namespace Types.Tests
 
         public static IEnumerable<object[]> Get_ToInt_Data_Failing()
         {
-            yield return new object[] { "" };
+            // Can't convert empty string into a integer
+            yield return new object[] { string.Empty };
+            // Can't convert string containing letters into a integer
             yield return new object[] { "l33t" };
+            // Can't convert letters into a integer
             yield return new object[] { "This is not a number" };
+            // Can't convert too big numbers into a integer
+            yield return new object[] { "112233445566778899" };
+            // Can't convert null into a integer
             yield return new object[] { null };
         }
 
