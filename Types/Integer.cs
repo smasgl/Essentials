@@ -6,9 +6,9 @@ namespace Essentials.Types
     {
         public static int ToInt(this string text)
         {
-            if (!int.TryParse(text, out int integer))
-                throw new FormatException($"Could not convert {text} to integer");
-            return integer;
+            if (!int.TryParse(text, out int number))
+                throw new FormatException($"Could not convert {text} to int");
+            return number;
         }
     }
 }
