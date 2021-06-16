@@ -42,6 +42,5 @@ namespace Types.Tests
         {
             Assert.Throws<FormatException>(() => text.ToInt());
         }
-
     }
 }
