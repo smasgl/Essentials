@@ -2,6 +2,29 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
-  </PropertyGroup>
+    <RootNamespace>Smasgl</RootNamespace>
+    <AssemblyName>Smasgl.Essentials.$(MSBuildProjectName)</AssemblyName>
 
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageLicenseExpression>GPL-3.0-only</PackageLicenseExpression>
+
+    <Title>$(MSBuildProjectName)</Title>
+    <Authors>Smasgl</Authors>
+    <Company>Smasgl</Company>
+    <Copyright>(c) 2021 Smasgl</Copyright>
+
+    <PackageProjectUrl>https://github.com/smasgl/Essentials</PackageProjectUrl>
+    <PackageTags>essentials, types, smasgl</PackageTags>
+    <Version>1.0.0</Version>
+    <Description>Essential methods 4 programming.</Description>
+
+    <PackageId>Smasgl.Essentials.Types</PackageId>
+
+    <RepositoryUrl>https://github.com/smasgl/Essentials.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+  </PropertyGroup>
 </Project>
