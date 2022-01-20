@@ -9,5 +9,7 @@
 ## Description
 
 Essential methods 4 programming.
+
 This library contains essential methods and classes for daily programming uses.
+
 Like a .ToInt Method.
